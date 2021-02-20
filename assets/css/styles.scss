@@ -11,9 +11,19 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  align-content: center;
+  padding: 10px 0;
 
   p {
-    margin-top: 10px;
     font-size: medium;
+    margin: 0;
+  }
+
+  .icon {
+    position: relative;
+    width: 22px;
+    height: 22px;
+    margin-left: 20px;
+    cursor: pointer;
   }
 }
