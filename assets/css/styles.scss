@@ -7,23 +7,58 @@
 }
 
 .footer {
-  border: 1px solid darkgray;
   display: flex;
   align-items: center;
   justify-content: center;
   align-content: center;
   padding: 10px 0;
 
+  span {
+    color: gray;
+    margin: 0 10px;
+
+    &:last-child {
+      display: none;
+    }
+  }
+
   p {
     font-size: medium;
     margin: 0;
   }
+}
 
+.home {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  align-items: center;
+  flex-direction: column;
+  height: 75vh;
+
+  h1 {
+    span {
+      margin-right: 5px;
+    }
+  }
+  h3 {
+    color: #4f4f4f;
+  }
+}
+
+.social {
+  margin-top: 20px;
   .icon {
     position: relative;
-    width: 22px;
-    height: 22px;
-    margin-left: 20px;
+    width: 30px;
+    height: 30px;
     cursor: pointer;
+    margin: 0 10px;
   }
+}
+
+.mode {
+  position: absolute;
+  top: 15px;
+  left: 15px;
 }
