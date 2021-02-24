@@ -6,7 +6,7 @@ permalink: /about/
 
 ### Experience
 
-I'm a front-end developer with over three years of commercial experience in building application for both web and mobile
+I'm a front-end developer with over 3.5+ years of commercial experience in building application for both web and mobile.
 
 ### Technology Stack
 

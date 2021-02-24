@@ -39,6 +39,9 @@
 
   h1 {
     position: relative;
+    .smaller-heading {
+      font-size: 0.8em;
+    }
     .hand {
       position: absolute;
       left: -50px;
