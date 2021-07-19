@@ -4,10 +4,10 @@ title: About
 permalink: /about/
 ---
 
-### Experience
+### :dart: Experience
 
-I'm a front-end developer with over 3.5+ years of commercial experience in building application for both web and mobile.
+I'm a front-end developer with over 4+ years of commercial experience in building application for both web and mobile.
 
-### Technology Stack
+### :man_technologist: Technology Stack
 
-HTML5, CSS3, SASS / LESS, JavaScript (+ECMAScript 6), `TypeScript`, `Angular 2`, React and `React Native`.
+HTML5, CSS3, SASS / LESS, JavaScript, `TypeScript`, `Angular 2`, React and `React Native`, Python, PostgreSQL, Docker.
