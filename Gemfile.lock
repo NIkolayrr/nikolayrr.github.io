@@ -122,7 +122,6 @@ DEPENDENCIES
   jekyll-feed (~> 0.12)
   jemoji
   minima
-  nokogiri (>= 1.6.7.rc)
   tzinfo (~> 1.2)
   tzinfo-data
   wdm (~> 0.1.1)
