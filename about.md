@@ -1,7 +1,7 @@
 ---
-layout: default
 title: About
-permalink: /about/
+layout: default
+permalink: '/about/'
 showInMenu: true
 ---
 

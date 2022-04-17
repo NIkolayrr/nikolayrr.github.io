@@ -2,5 +2,5 @@
 layout: default
 ---
 
-<h3># {{ page.title | escape }}</h3>
+<h2># {{ page.title | escape }}</h2>
 {{ content }}
