@@ -7,8 +7,8 @@ showInMenu: true
 
 ### 🎯 Experience
 
-I'm a front-end developer with over 4+ years of commercial experience in building application for both web and mobile.
+As a developer with over five years of commercial experience, I have helped to build and deliver innovative applications that have transformed industries and improved the lives of users. I have worked on cutting-edge projects in FinTech, Real Estate, and Co-working spaces, using my expertise in web and mobile development to create solutions that are efficient, user-friendly, and scalable.
 
 ### 👨‍💻 Technology Stack
 
-HTML5, CSS3, SASS / LESS, JavaScript, `TypeScript`, `Angular 2`, React and `React Native`, Python, PostgreSQL, Docker.
+JavaScript, `TypeScript`, React and `React Native`, `Swift`, `Angular 2`, HTML5, CSS3, SASS / LESS, Python, PostgreSQL, Docker.
