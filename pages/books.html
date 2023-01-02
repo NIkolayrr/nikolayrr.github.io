@@ -1,0 +1,21 @@
+---
+layout: default
+title: Reading List
+permalink: /reading-list/
+showInMenu: true
+---
+
+<h1>Reading List 2023</h1>
+<ul>
+  {% for book in site.data.books %} {% assign progress = book.progress | times: 100 | divided_by: book.pages %}
+  <li>
+    <h2>{{ book.title }}</h2>
+    <p>Author: {{ book.author }}</p>
+    {% if book.progress == book.pages %}
+    <p class="read-book">Progess: {{ progress }}%</p>
+    {% else %}
+    <p class="book-in-progress">Progess: {{ progress }}%</p>
+    {% endif %}
+  </li>
+  {% endfor %}
+</ul>
