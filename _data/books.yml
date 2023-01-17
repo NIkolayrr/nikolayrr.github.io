@@ -1,4 +1,12 @@
 - title: 'Nineteen Eighty-Four (1984)'
   author: 'George Orwell'
   pages: 328
-  progress: 63
+  progress: 328
+- title: 'The Gods Themselves'
+  author: 'Isaac Asimov'
+  pages: 288
+  progress: 0
+- title: 'Brave New World'
+  author: 'Aldous Huxley'
+  pages: 311
+  progress: 0
