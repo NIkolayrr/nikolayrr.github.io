@@ -9,4 +9,8 @@
 - title: 'Brave New World'
   author: 'Aldous Huxley'
   pages: 311
+  progress: 311
+- title: 'The Brothers Karamazov'
+  author: 'Fyodor Dostoevsky'
+  pages: 929
   progress: 0
