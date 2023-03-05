@@ -9,7 +9,7 @@ showInMenu: true
 
 Topics
 
-  <ul>
+  <ul class="digital-garden">
     {% for topic in site.data.topics %}
     <li>
       <a href="/digital-garden{{ topic.link }}"> {{ topic.name }} </a>

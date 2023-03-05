@@ -11,11 +11,11 @@
   align-items: center;
   justify-content: center;
   align-content: center;
-  padding: 10px 0;
+  padding: 1rem 0;
 
   span {
     color: gray;
-    margin: 0 10px;
+    margin: 0 1rem;
 
     &:last-child {
       display: none;
@@ -81,6 +81,26 @@
 
 .book-in-progress {
   color: tomato;
+}
+
+.digital-garden {
+  display: flex;
+  flex-direction: column;
+}
+
+.digital-garden li {
+  margin: 10px 0;
+}
+
+.topic-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.topic-header h2 {
+  flex-grow: 1;
+  margin-bottom: 0;
 }
 
 @keyframes wave-animation {

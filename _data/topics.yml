@@ -1,11 +1,19 @@
 - name: NodeJS
   link: '/node-js'
+  image: ''
 
 - name: React Native
   link: '/react-native'
+  image: ''
 
 - name: JavaScript
   link: '/js'
+  image: ''
 
 - name: VS Code
   link: '/vs-code'
+  image: ''
+
+- name: React
+  link: '/react'
+  image: ''
