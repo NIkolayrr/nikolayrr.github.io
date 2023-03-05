@@ -5,14 +5,18 @@ permalink: '/digital-garden/'
 showInMenu: true
 ---
 
-## 🌱 Notes, snippets and useful programming resources.
-
-Topics
-
-  <ul class="digital-garden">
+<h2>🌱 Notes, snippets and useful programming resources.</h2>
+<main class="topics-container">
+  <h3>Topics</h3>
+  <ul class="digital-garden-list">
     {% for topic in site.data.topics %}
     <li>
       <a href="/digital-garden{{ topic.link }}"> {{ topic.name }} </a>
     </li>
     {% endfor %}
   <ul>
+</main>
+<aside class="blog-container">
+  <h3>Blog</h3>
+  {% include blog.html %}
+</aside>

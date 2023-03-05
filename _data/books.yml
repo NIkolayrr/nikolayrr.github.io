@@ -2,15 +2,19 @@
   author: 'George Orwell'
   pages: 328
   progress: 328
+  cover: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/1984JLH1.jpg/1920px-1984JLH1.jpg'
 - title: 'The Gods Themselves'
   author: 'Isaac Asimov'
   pages: 288
   progress: 288
+  cover: 'https://upload.wikimedia.org/wikipedia/en/a/a3/TheGodsThemselves%281stEd%29.jpg'
 - title: 'Brave New World'
   author: 'Aldous Huxley'
   pages: 311
   progress: 311
+  cover: 'https://upload.wikimedia.org/wikipedia/en/6/62/BraveNewWorld_FirstEdition.jpg'
 - title: 'The Brothers Karamazov'
   author: 'Fyodor Dostoevsky'
   pages: 929
   progress: 14
+  cover: 'https://upload.wikimedia.org/wikipedia/commons/2/2d/Dostoevsky-Brothers_Karamazov.jpg'
