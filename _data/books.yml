@@ -2,7 +2,7 @@
   author: 'George Orwell'
   pages: 328
   progress: 328
-  cover: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/1984JLH1.jpg/1920px-1984JLH1.jpg'
+  cover: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/1984JLH1.jpg/380px-1984JLH1.jpg'
 - title: 'The Gods Themselves'
   author: 'Isaac Asimov'
   pages: 288
@@ -13,8 +13,18 @@
   pages: 311
   progress: 311
   cover: 'https://upload.wikimedia.org/wikipedia/en/6/62/BraveNewWorld_FirstEdition.jpg'
+- title: 'George Orwell'
+  author: 'Animal Farm'
+  pages: 140
+  progress: 52
+  cover: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Animal_Farm_-_1st_edition.jpg/440px-Animal_Farm_-_1st_edition.jpg'
 - title: 'The Brothers Karamazov'
   author: 'Fyodor Dostoevsky'
   pages: 929
   progress: 14
   cover: 'https://upload.wikimedia.org/wikipedia/commons/2/2d/Dostoevsky-Brothers_Karamazov.jpg'
+- title: '12 Rules for life'
+  author: 'Jordan Peterson'
+  pages: 448
+  progress: 0
+  cover: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/12_Rules_for_Life_Front_Cover_%282018_first_edition%29.jpg/440px-12_Rules_for_Life_Front_Cover_%282018_first_edition%29.jpg'
