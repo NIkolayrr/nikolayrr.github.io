@@ -1,11 +1,10 @@
 ---
-title: How to implement an infinite scroll using React Native FlatList and GraphQL
+title: Implementing Infinite Scroll with React Native FlatList and GraphQL - A Step-by-Step Guide
 layout: post
 ---
 
-First thing's first lets see what we're building\
-![Rick and Morty](https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExY3dhYWhlZDU3aGc3Z3huaDl3aDFyczFub3NuNmJja2ltNGVhczg0NiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/cQdsmRdy9AGo0YST9m/giphy.gif)\
-Okay, great. The design could use a bit of touch-up, but you get the idea.
+Before we dive in, let's get a glimpse of what we're about to create.\
+![Rick and Morty](https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExY3dhYWhlZDU3aGc3Z3huaDl3aDFyczFub3NuNmJja2ltNGVhczg0NiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/cQdsmRdy9AGo0YST9m/giphy.gif)
 
 # Step One - Setup the project and install dependencies
 
@@ -40,7 +39,7 @@ npm install
 
 # Step Two - Setup ApolloClient
 
-We will be using the Rick and Morty API [https://rickandmortyapi.com/graphql](https://rickandmortyapi.com/graphql) . The first thing we want to do is initialise our ApolloClient
+We'll utilize the Rick and Morty API [https://rickandmortyapi.com/graphql](https://rickandmortyapi.com/graphql). Our initial step is to set up our ApolloClient.
 
 ```
 // queries.js
