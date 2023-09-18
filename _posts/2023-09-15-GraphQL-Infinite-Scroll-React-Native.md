@@ -17,7 +17,7 @@ cd RickAndMorty
 
 Add all the required dependencies into package.json dependencies.
 
-```
+```json
     "@apollo/client": "^3.8.3",
     "@react-navigation/native-stack": "^6.9.13",
     "expo": "~49.0.10",
@@ -41,7 +41,7 @@ npm install
 
 We'll utilize the Rick and Morty API [https://rickandmortyapi.com/graphql](https://rickandmortyapi.com/graphql). Our initial step is to set up our ApolloClient.
 
-```
+```javascript
 // queries.js
 import { ApolloClient, InMemoryCache } from '@apollo/client'
 
@@ -53,7 +53,7 @@ export const client = new ApolloClient({
 
 Now let's wrap our app with ApolloProvider enabling you to access it from anywhere in your component tree.
 
-```
+```javascript
 // App.js
 import { NavigationProvider } from './Navigation'
 import { NavigationContainer } from '@react-navigation/native'
@@ -69,10 +69,9 @@ export default function App() {
     </NavigationContainer>
   )
 }
-
 ```
 
-```
+```javascript
 // NavigationProvider.js
 
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
@@ -87,12 +86,11 @@ export const NavigationProvider = () => {
     </Stack.Navigator>
   )
 }
-
 ```
 
 Let's also create our Home Screen which will be located under a screen folder
 
-```
+```javascript
 // HomeScreen.js
 
 import { View, Text, StyleSheet } from 'react-native'
@@ -120,12 +118,11 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 })
-
 ```
 
-We can utilize the useQuery hook from Apollo to fetch character data from the API and create a simple list displaying the names of the first 20 characters.
+Next let's add this GraphQL query which is designed to retrieve a list of characters from a GraphQL server, with the ability to paginate through the results by providing the page variable as an input.
 
-```
+```javascript
 import { gql, ApolloClient, InMemoryCache } from '@apollo/client'
 
 export const GET_CHARACTHERS = gql`
@@ -150,12 +147,11 @@ export const client = new ApolloClient({
   uri: 'https://rickandmortyapi.com/graphql/',
   cache: new InMemoryCache({}),
 })
-
 ```
 
-We can use useQuery hook from apollo to retrive the character data from the API and setup a plain list containing the names of the first 20 characters.
+We can utilize the useQuery hook from Apollo to fetch character data from the API and create a simple list displaying the names of the first 20 characters.
 
-```
+```javascript
 // HomeScreen.js
 import { useQuery } from '@apollo/client'
 import { View, Text, StyleSheet, FlatList } from 'react-native'
@@ -207,7 +203,7 @@ export const HomeScreen = () => {
 
 Next, we'll enhance the handleRenderItem function by incorporating some styling and providing additional character information.
 
-```
+```javascript
 // HomeScreen.js
 import { Image } from 'expo-image'
 
@@ -275,7 +271,7 @@ const styles = StyleSheet.create({
 
 We've created a list and fetched data from the API, but now we need to set up pagination. First, let's add the **onEndReached** handler to the FlatList to detect when to make new requests. Then, we can use **fetchMore** from useQueries to update the page variable and make additional requests.
 
-```
+```javascript
 // HomeScreen.js
 
   const { loading, error, data, fetchMore } = useQuery(GET_CHARACTHERS, {
@@ -318,7 +314,7 @@ We've created a list and fetched data from the API, but now we need to set up pa
 
 We might receive a warning related to **ensuring that all objects of type Characters have an ID or a custom merge function.** To address this issue, let's include typePolicies in the InMemoryCache.
 
-```
+```javascript
 // queries.js
 
 export const client = new ApolloClient({
@@ -340,7 +336,7 @@ export const client = new ApolloClient({
 
 The final step is to incorporate a loading indicator when we fetch additional characters. To achieve this, we'll include **networkStatus** from **useQueries** and set up a listener for **notifyOnNetworkStatusChange**. We can also remove the loading check.
 
-```
+```javascript
 // HomeScreen.js
 import { NetworkStatus, useQuery } from '@apollo/client'
 import { View, Text, StyleSheet, FlatList, ActivityIndicator } from 'react-native'
@@ -403,10 +399,10 @@ export const HomeScreen = () => {
             onEndReached={hanndleEndReach}
           />
         )}
-        <View style={{ marginVertical: 10 }}>
+        <View>
           {networkStatus === NetworkStatus.fetchMore && (
-            <View style={{ flexDirection: 'row' }}>
-              <Text style={{ marginRight: 10 }}>Fetching Data</Text>
+            <View>
+              <Text>Fetching Data</Text>
               <ActivityIndicator />
             </View>
           )}
