@@ -26,5 +26,10 @@
 - title: '12 Rules for life'
   author: 'Jordan Peterson'
   pages: 448
-  progress: 0
+  progress: 448
   cover: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/12_Rules_for_Life_Front_Cover_%282018_first_edition%29.jpg/440px-12_Rules_for_Life_Front_Cover_%282018_first_edition%29.jpg'
+- title: 'The Unbearable Lightness of Being'
+  author: 'Milan Kundera'
+  pages: 356
+  progress: 49
+  cover: 'https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1265401884i/9717.jpg'
