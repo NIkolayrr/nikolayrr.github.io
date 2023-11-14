@@ -132,18 +132,23 @@
 
 .reading-list {
   ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    @media screen and (max-width: $on-palm) {
+      display: block;
+    }
     li {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      max-width: 200px;
       margin-bottom: 1rem;
+      list-style: none;
       .img-container {
         width: 200px;
         height: 200px;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
-        margin-right: 1rem;
+        margin-bottom: 1rem;
         border-radius: 0.3rem;
         box-shadow: 5px 5px $grey-color-dark;
 
