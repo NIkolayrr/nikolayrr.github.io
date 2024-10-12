@@ -2,11 +2,11 @@
 layout: default
 title: Reading List
 permalink: /reading-list/
-showInMenu: true
+showInMenu: false
 ---
 
 <div class="reading-list">
-  <h1>Reading List 2023</h1>
+  <h1>Reading List</h1>
   <ul>
     {% for book in site.data.books %} {% assign progress = book.progress | times: 100 | divided_by: book.pages %}
     <li>

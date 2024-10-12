@@ -7,7 +7,7 @@ showInMenu: true
 
 ### 🎯 Experience
 
-As a developer with over five years of commercial experience, I have helped to build and deliver innovative applications that have transformed industries and improved the lives of users. I have worked on cutting-edge projects in FinTech, Real Estate, and Co-working spaces, using my expertise in web and mobile development to create solutions that are efficient, user-friendly, and scalable.
+I have experience working with startups and mid-sized companies, building and deploying both mobile and web applications. My background spans across industries such as FinTech, Real Estate, Co-working, and Hospitality.
 
 ### 👨‍💻 Technology Stack
 
