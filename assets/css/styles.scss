@@ -3,6 +3,143 @@
 
 @import 'minima.scss';
 
+:root {
+  --text-color: #111;
+  --background-color: #fdfdfd;
+  --brand-color: #186ddb;
+  --grey-color: #828282;
+  --grey-color-light: #d1d1d1;
+  --grey-color-dark: #4a4a4a;
+}
+
+html[data-theme='dark'] {
+  --text-color: #ECDFCC;
+  --background-color: #181C14;
+  --brand-color: #697565;
+  --grey-color: #3C3D37;
+  --grey-color-light: #697565;
+  --grey-color-dark: #181C14;
+}
+
+body {
+  color: var(--text-color);
+  background: var(--background-color);
+}
+
+.wrapper,
+.page-content,
+footer {
+  background: transparent;
+  color: var(--text-color);
+}
+
+header {
+  color: var(--text-color);
+}
+
+a,
+a:visited,
+a:active {
+  color: var(--brand-color);
+}
+
+a:hover,
+a:focus {
+  color: var(--brand-color);
+}
+
+.site-title,
+.site-title:visited,
+.site-title:active,
+.site-title:hover,
+.site-title:focus {
+  color: var(--text-color);
+}
+
+.site-title {
+  font-size: 1.05rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+}
+
+.site-nav a {
+  color: var(--brand-color);
+}
+
+.site-header {
+  position: relative;
+  background: var(--background-color);
+  border-bottom: none;
+}
+
+.site-header .wrapper {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+}
+
+.theme-toggle {
+  position: relative;
+  background: none;
+  border: none;
+  border-radius: 999px;
+  width: 2.6rem;
+  height: 2.6rem;
+  font-size: 1.1rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--text-color);
+  overflow: hidden;
+}
+
+.theme-toggle-icon {
+  position: absolute;
+  inset: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+html:not([data-theme='dark']) .theme-toggle-icon--moon {
+  display: inline-flex;
+}
+
+html:not([data-theme='dark']) .theme-toggle-icon--sun,
+html[data-theme='dark'] .theme-toggle-icon--moon {
+  display: none;
+}
+
+html[data-theme='dark'] .theme-toggle-icon--sun {
+  display: inline-flex;
+}
+
+.sr-only {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+.footer a {
+  color: var(--brand-color);
+}
+
+pre,
+code {
+  background-color: transparent;
+  color: var(--brand-color);
+}
+
 .reading-time {
   color: gray;
   font-size: small;
@@ -17,7 +154,7 @@
   flex-wrap: wrap;
 
   span {
-    color: gray;
+    color: var(--grey-color);
     margin: 0 1rem;
 
     &:last-child {
@@ -57,7 +194,7 @@
     }
   }
   h3 {
-    color: #4f4f4f;
+    color: var(--grey-color);
   }
 }
 
@@ -100,9 +237,17 @@
     }
 
     a {
-      padding: 0.8rem;
-      background-color: $grey-color-light;
+      padding: 0.5rem;
+      background-color: var(--brand-color);
+      color: white;
       border-radius: 2rem;
+      transition: opacity 0.2s ease-in-out;
+      text-decoration: none;
+
+      &:hover {
+        opacity: 0.8;
+      }
+
       @media screen and (max-width: $on-palm) {
         padding: 0.6rem;
       }
@@ -211,5 +356,56 @@
   }
   100% {
     transform: rotate(0deg);
+  }
+}
+
+.recent-posts {
+  margin-top: 3rem;
+  padding: 2rem 0;
+  border-top: 1px solid var(--grey-color-light);
+  
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-color);
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    
+    li {
+      margin-bottom: 2rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid var(--grey-color-light);
+      
+      &:last-child {
+        border-bottom: none;
+      }
+      
+      h3 {
+        margin-bottom: 0.5rem;
+        
+        a {
+          color: var(--text-color);
+          text-decoration: none;
+          
+          &:hover {
+            color: var(--brand-color);
+          }
+        }
+      }
+      
+      .post-meta {
+        font-size: 0.9rem;
+        color: var(--grey-color);
+        margin-bottom: 0.5rem;
+      }
+      
+      p {
+        color: var(--text-color);
+        line-height: 1.6;
+      }
+    }
   }
 }

@@ -1,9 +1,10 @@
 <div class="footer">
     <a class="page-link" href="{{ "/" | relative_url }}">Home</a>
-    <span>&#8226;</span>
-    {%- if page_paths -%} {%- for path in page_paths -%} {%- assign my_page = site.pages | where: "path", path | first
-    -%} {%- if my_page.title and my_page.showInMenu -%}
-        <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+    {% assign menu_pages = site.pages | where: "showInMenu", true | sort: "title" %}
+    {% for my_page in menu_pages %}
+      {% if my_page.url != "/" %}
         <span>&#8226;</span>
-    {%- endif -%} {%- endfor -%} {%- endif -%}
+        <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+      {% endif %}
+    {% endfor %}
 </div>
